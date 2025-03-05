@@ -1,0 +1,14 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider  = "postgresql"
+  url       = env("SMART_STORE_DATABASE_URL")
+  directUrl = env("SMART_STORE_DATABASE_DIRECT_URL")
+}
+
+// TODO: DB 자원 획득 시, 이관 필요.
+model Product {
+  name String @id @db.VarChar(64)
+}

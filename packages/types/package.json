@@ -1,0 +1,20 @@
+{
+  "name": "@repo/types",
+  "version": "0.0.0",
+  "private": true,
+  "exports": {
+    "./*": {
+      "default": "./src/*.ts"
+    },
+    "./**/*": {
+      "default": "./src/**/**.ts"
+    }
+  },
+  "files": ["src/"],
+  "devDependencies": {
+    "@repo/typescript-config": "workspace:*"
+  },
+  "peerDependencies": {
+    "rimraf": "catalog:"
+  }
+}

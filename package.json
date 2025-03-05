@@ -1,0 +1,27 @@
+{
+  "name": "temp-smart-store-user",
+  "private": true,
+  "scripts": {
+    "build": "turbo build",
+    "dev": "turbo dev",
+    "dev-watch": "turbo dev-watch",
+    "lint": "turbo lint",
+    "start": "turbo start",
+    "format-and-lint": "biome check .",
+    "format-and-lint:fix": "biome check . --write",
+    "dev-story": "turbo dev-story",
+    "build-story": "turbo build-story"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "catalog:",
+    "dotenv-cli": "^8.0.0",
+    "rimraf": "catalog:",
+    "turbo": "catalog:",
+    "typescript": "catalog:"
+  },
+  "packageManager": "pnpm@10.5.2",
+  "engines": {
+    "node": ">=22",
+    "pnpm": "10.5.2"
+  }
+}

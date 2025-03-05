@@ -1,0 +1,21 @@
+{
+  "name": "@repo/util",
+  "version": "0.0.0",
+  "private": true,
+  "exports": {
+    "./style/*": {
+      "default": ["./src/style/*.ts"]
+    }
+  },
+  "files": ["src/"],
+  "dependencies": {
+    "clsx": "catalog:",
+    "tailwind-merge": "catalog:"
+  },
+  "peerDependencies": {
+    "@repo/typescript-config": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/node": "catalog:"
+  }
+}

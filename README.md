@@ -1,1 +1,1 @@
-# smart-store-front
+nvm use $(cat .nvmrc)
