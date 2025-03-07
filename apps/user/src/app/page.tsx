@@ -1,5 +1,5 @@
 import type { TestType } from "@repo/types/test-type";
-import { Button } from "@repo/ui/organisms";
+import Button from "@repo/ui/atoms/Button/Button";
 
 export default function Home() {
   const data: TestType = {};

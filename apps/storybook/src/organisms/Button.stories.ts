@@ -1,6 +1,5 @@
-import { Button, ButtonVariants } from "@repo/ui/organisms";
+import Button, { ButtonVariants } from "@repo/ui/atoms/Button/Button";
 import type { Meta, StoryObj } from "@storybook/react";
-// import { fn } from "@storybook/test";
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
 const meta: Meta<typeof Button> = {
