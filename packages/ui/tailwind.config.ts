@@ -1,9 +1,6 @@
-import preset from "@repo/tailwind-config/tailwind.config";
 import type { Config } from "tailwindcss";
 
 const config: Config = {
-  ...preset,
-  presets: [preset],
   darkMode: "selector",
   content: ["./src/**/*.{js,ts,jsx,tsx,mdx}"],
   theme: {
@@ -53,6 +50,5 @@ const config: Config = {
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
 };
 export default config;

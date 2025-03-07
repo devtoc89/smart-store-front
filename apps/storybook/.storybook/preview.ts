@@ -1,4 +1,4 @@
-import "../globals.css";
+import "./globals.css";
 import "@repo/ui/globals.css";
 import type { Preview } from "@storybook/react";
 
@@ -13,13 +13,14 @@ const preview: Preview = {
     backgrounds: {
       values: [
         // 👇 Default values
-        // { name: "Dark", value: "#333" },
-        // { name: "Light", value: "#F7F9F2" },
-        // { name: "Maroon", value: "#400" },
-        // { name: "Background", value: "#E5E5E5" },
+        { name: "None", value: "transparent" },
+        { name: "Dark", value: "#333" },
+        { name: "Light", value: "#F7F9F2" },
+        { name: "Maroon", value: "#400" },
+        { name: "Background", value: "#E5E5E5" },
       ],
       // 👇 Specify which background is shown by default
-      // default: 'Background',
+      default: "None",
     },
   },
 };

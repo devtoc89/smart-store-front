@@ -33,9 +33,7 @@
   },
   "devDependencies": {
     "@biomejs/biome": "catalog:",
-    "@repo/tailwind-config": "workspace:*",
     "@repo/typescript-config": "workspace:*",
-    "@turbo/gen": "^1.12.4",
     "@types/node": "catalog:",
     "@types/react": "catalog:",
     "@types/react-dom": "catalog:",
