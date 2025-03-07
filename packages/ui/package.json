@@ -9,14 +9,14 @@
   },
   "exports": {
     ".": "./src/index.ts",
-    "./organisms": {
-      "import": "./src/organisms/index.ts"
-    },
     "./globals.css": "./src/globals.css",
     "./postcss.config": "./postcss.config.mjs",
     "./tailwind.config": "./tailwind.config.ts",
     "./*": {
       "import": ["./src/*.tsx", "./src/*.ts", "./src/*"]
+    },
+    "./**/*": {
+      "import": ["./src/**/*.tsx", "./src/**/*.ts", "./src/**/*"]
     }
   },
   "dependencies": {
