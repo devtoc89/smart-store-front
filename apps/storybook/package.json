@@ -7,7 +7,6 @@
     "build-story": "storybook build"
   },
   "dependencies": {
-    "@repo/tailwind-config": "workspace:*",
     "@repo/ui": "workspace:*",
     "next": "catalog:",
     "react": "catalog:",

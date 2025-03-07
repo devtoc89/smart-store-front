@@ -1,4 +1,4 @@
-import Button from "@repo/ui/organisms/Button/Button";
+import Button from "@repo/ui/atoms/Button/Button";
 import type { Meta, StoryObj } from "@storybook/react";
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export

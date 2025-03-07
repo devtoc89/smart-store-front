@@ -1,8 +1,9 @@
 import path from "node:path";
-import preset from "@repo/tailwind-config/tailwind.config";
+import preset from "@repo/ui/tailwind.config";
 import type { Config } from "tailwindcss";
 
 const config: Config = {
+  ...preset,
   presets: [preset],
   content: [
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
