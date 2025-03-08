@@ -1,0 +1,37 @@
+{
+  "name": "admin-apps-story",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "generate:dts": "pnpm dlx tsx generateType.ts",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
+  },
+  "dependencies": {
+    "@module-federation/enhanced": "catalog:",
+    "react": "catalog:",
+    "react-dom": "catalog:"
+  },
+  "devDependencies": {
+    "@module-federation/dts-plugin": "catalog:",
+    "@module-federation/rsbuild-plugin": "catalog:",
+    "@rsbuild/core": "catalog:",
+    "@rsbuild/plugin-react": "catalog:",
+    "@chromatic-com/storybook": "catalog:",
+    "@storybook/addon-essentials": "catalog:",
+    "@storybook/addon-interactions": "catalog:",
+    "@storybook/addon-links": "catalog:",
+    "@storybook/blocks": "catalog:",
+    "@storybook/react": "catalog:",
+    "@storybook/test": "catalog:",
+    "@types/react": "catalog:",
+    "@types/react-dom": "catalog:",
+    "storybook": "catalog:",
+    "storybook-react-rsbuild": "1.0.0",
+    "typescript": "catalog:",
+    "@repo/typescript-config": "workspace:*",
+    "tailwindcss": "catalog:",
+    "class-variance-authority": "catalog:"
+  }
+}

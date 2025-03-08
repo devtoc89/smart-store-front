@@ -1,0 +1,29 @@
+{
+  "name": "admin-apps-shell",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "generate:dts": "pnpm dlx tsx generateType.ts",
+    "build": "rsbuild build",
+    "dev": "rsbuild dev --open",
+    "preview": "rsbuild preview"
+  },
+  "dependencies": {
+    "@module-federation/enhanced": "catalog:",
+    "react": "catalog:",
+    "react-dom": "catalog:"
+  },
+  "devDependencies": {
+    "@module-federation/dts-plugin": "catalog:",
+    "@module-federation/rsbuild-plugin": "catalog:",
+    "@rsbuild/core": "catalog:",
+    "@rsbuild/plugin-react": "catalog:",
+    "@types/react": "catalog:",
+    "@types/react-dom": "catalog:",
+    "typescript": "catalog:",
+    "tailwindcss": "catalog:",
+    "@repo/typescript-config": "workspace:*",
+    "class-variance-authority": "catalog:"
+  }
+}

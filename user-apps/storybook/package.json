@@ -1,10 +1,10 @@
 {
-  "name": "storybook",
+  "name": "user-apps-story",
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "dev-story": "storybook dev -p 6006",
-    "build-story": "storybook build"
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "dependencies": {
     "@repo/ui": "workspace:*",
@@ -13,13 +13,14 @@
     "react-dom": "catalog:"
   },
   "devDependencies": {
-    "storybook": "8.4.4",
-    "@storybook/addon-essentials": "8.4.4",
-    "@storybook/addon-interactions": "8.4.4",
-    "@storybook/addon-links": "8.4.4",
-    "@storybook/nextjs": "8.4.4",
-    "@storybook/react": "8.4.4",
-    "@storybook/test": "8.4.4",
+    "storybook": "catalog:",
+    "@chromatic-com/storybook": "catalog:",
+    "@storybook/addon-essentials": "catalog:",
+    "@storybook/addon-interactions": "catalog:",
+    "@storybook/addon-links": "catalog:",
+    "@storybook/blocks": "catalog:",
+    "@storybook/react": "catalog:",
+    "@storybook/test": "catalog:",
     "@biomejs/biome": "catalog:",
     "@types/node": "catalog:",
     "@types/react": "catalog:",
@@ -28,6 +29,7 @@
     "typescript": "catalog:",
     "autoprefixer": "catalog:",
     "postcss": "catalog:",
+    "@storybook/nextjs": "8.6.4",
     "@repo/typescript-config": "workspace:*"
   }
 }

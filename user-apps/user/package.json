@@ -1,5 +1,5 @@
 {
-  "name": "user",
+  "name": "user-apps-shell",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -7,19 +7,13 @@
     "debug": "cross-env NODE_OPTIONS='--inspect' next dev",
     "build": "next build",
     "start": "next start -p 3331",
-    "lint": "next lint",
-    "push": "prisma db push",
-    "pull": "prisma db pull",
-    "generate": "prisma generate",
-    "studio": "prisma studio"
+    "lint": "next lint"
   },
   "dependencies": {
-    "@prisma/adapter-pg": "^6.4.1",
-    "@prisma/client": "catalog:",
     "@repo/ui": "workspace:*",
     "@repo/util": "workspace:*",
     "cross-env": "^7.0.3",
-    "es-toolkit": "^1.32.0",
+    "es-toolkit": "catalog:",
     "next": "catalog:",
     "react": "catalog:",
     "react-dom": "catalog:"
@@ -33,7 +27,6 @@
     "@types/node": "catalog:",
     "autoprefixer": "catalog:",
     "postcss": "catalog:",
-    "tailwindcss": "catalog:",
-    "prisma": "catalog:"
+    "tailwindcss": "catalog:"
   }
 }
