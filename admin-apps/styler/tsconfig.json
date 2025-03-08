@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "extends": "@repo/typescript-config/react.module.app.json",
+  "compilerOptions": {
+    "paths": {
+      "*": ["./@mf-types/*"],
+      "@/*": ["./src/*"]
+    }
+  },
+  "include": ["src"]
+}

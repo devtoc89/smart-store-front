@@ -12,8 +12,5 @@
   },
   "devDependencies": {
     "@repo/typescript-config": "workspace:*"
-  },
-  "peerDependencies": {
-    "rimraf": "catalog:"
   }
 }
