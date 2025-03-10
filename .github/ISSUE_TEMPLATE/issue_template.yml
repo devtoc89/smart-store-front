@@ -1,0 +1,65 @@
+name: 📝 일반 이슈
+description: 새로운 이슈를 생성합니다.
+title: "[이슈 유형] 제목을 입력하세요"
+labels: ["*"]
+assignees: [toc89]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 🚀 이슈 가이드라인
+        - 본문을 상세하게 작성해주세요.
+        - 필요 시 체크리스트를 추가하여 진행 상황을 공유해주세요.
+        - 관련된 이슈가 있다면 연결해주세요.
+
+  - type: textarea
+    id: description
+    attributes:
+      label: "📌 이슈 설명"
+      description: "이슈에 대한 설명을 간략히 작성해주세요."
+      placeholder: "무엇이 문제인가요? 혹은 어떤 기능이 필요한가요?"
+    validations:
+      required: true
+
+  - type: textarea
+    id: todo
+    attributes:
+      label: "✅ 작업 목록"
+      description: "작업해야 할 내용을 체크리스트 형태로 작성해주세요."
+      value: |
+        - [ ] 작업 1
+        - [ ] 작업 2
+        - [ ] 작업 3
+    validations:
+      required: false
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: "🎯 기대하는 결과"
+      description: "이슈 해결 후 예상되는 결과를 작성해주세요."
+      placeholder: "어떤 결과를 기대하고 있나요?"
+    validations:
+      required: false
+
+  - type: input
+    id: related-issues
+    attributes:
+      label: "🔗 관련 이슈"
+      description: "관련된 이슈 번호를 입력해주세요 (예: #12, #34)"
+      placeholder: "#이슈번호"
+    validations:
+      required: false
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: "⚡ 우선순위"
+      description: "이슈의 우선순위를 설정해주세요."
+      options:
+        - "🟥 긴급 (Critical)"
+        - "🟧 높음 (High)"
+        - "🟨 보통 (Medium)"
+        - "🟩 낮음 (Low)"
+    validations:
+      required: false

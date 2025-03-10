@@ -1,0 +1,80 @@
+name: 🐛 버그 리포트
+description: 발견한 버그를 제보합니다.
+title: "[Bug] 버그 내용을 간략히 작성해주세요"
+labels: ["bug"]
+assignees: [toc89]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 🐛 버그 제보 가이드
+        - 버그가 발생한 환경과 재현 방법을 상세히 작성해주세요.
+        - 스크린샷이 있다면 첨부해주세요.
+        - 버그 수정 시 기대하는 동작을 설명해주세요.
+
+  - type: textarea
+    id: bug-description
+    attributes:
+      label: "📌 버그 설명"
+      description: "발생한 버그에 대한 설명을 입력해주세요."
+      placeholder: "어떤 문제가 발생했나요?"
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: "🚀 재현 방법"
+      description: "버그를 재현하는 방법을 단계별로 작성해주세요."
+      value: |
+        1. ~~~ (어떤 행동을 했는지)
+        2. ~~~ (어떤 결과가 발생했는지)
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: "🎯 기대하는 동작"
+      description: "정상적으로 동작했다면 어떤 결과가 나와야 하는지 작성해주세요."
+      placeholder: "어떤 결과를 기대하셨나요?"
+    validations:
+      required: true
+
+  - type: input
+    id: environment
+    attributes:
+      label: "💻 실행 환경"
+      description: "버그가 발생한 환경을 입력해주세요 (예: OS, 브라우저, 버전 등)."
+      placeholder: "예: macOS 13.2, Chrome 110"
+    validations:
+      required: true
+
+  - type: textarea
+    id: screenshot
+    attributes:
+      label: "📷 스크린샷 (선택)"
+      description: "버그 관련 스크린샷이 있다면 첨부해주세요."
+    validations:
+      required: false
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: "📜 콘솔 로그 (선택)"
+      description: "에러 로그가 있다면 첨부해주세요."
+    validations:
+      required: false
+
+  - type: dropdown
+    id: severity
+    attributes:
+      label: "⚡ 심각도"
+      description: "버그의 심각도를 선택해주세요."
+      options:
+        - "🟥 치명적 (Critical)"
+        - "🟧 높음 (High)"
+        - "🟨 보통 (Medium)"
+        - "🟩 낮음 (Low)"
+    validations:
+      required: false
