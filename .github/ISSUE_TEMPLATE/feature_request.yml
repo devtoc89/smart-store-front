@@ -1,0 +1,61 @@
+name: 🚀 기능 요청
+description: 새로운 기능을 제안합니다.
+title: "[Feature] 기능 요청 제목을 입력하세요"
+labels: ["enhancement"]
+assignees: [toc89]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 🚀 기능 요청 가이드
+        - 필요한 기능을 설명해주세요.
+        - 기능이 추가되었을 때 기대하는 결과를 작성해주세요.
+        - 관련된 기능이나 참고할 자료가 있다면 공유해주세요.
+
+  - type: textarea
+    id: feature-description
+    attributes:
+      label: "📌 기능 설명"
+      description: "추가하고 싶은 기능을 설명해주세요."
+      placeholder: "어떤 기능이 필요하신가요?"
+    validations:
+      required: true
+
+  - type: textarea
+    id: motivation
+    attributes:
+      label: "🔍 필요 이유"
+      description: "이 기능이 왜 필요한지 설명해주세요."
+      placeholder: "기능을 추가하면 어떤 점이 개선되나요?"
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: "🎯 기대하는 동작"
+      description: "기능이 추가되면 어떤 결과가 나올지 설명해주세요."
+      placeholder: "어떤 동작을 기대하나요?"
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternative
+    attributes:
+      label: "💡 대안 (선택)"
+      description: "비슷한 기능을 수행할 다른 방법이 있다면 공유해주세요."
+    validations:
+      required: false
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: "⚡ 우선순위"
+      description: "이 기능의 중요도를 선택해주세요."
+      options:
+        - "🟥 긴급 (Critical)"
+        - "🟧 높음 (High)"
+        - "🟨 보통 (Medium)"
+        - "🟩 낮음 (Low)"
+    validations:
+      required: false
